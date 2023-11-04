@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font {
+  font-family: "Playfair Display", serif;
+  font-size: large;
+}
+
+.dropdown:hover .dropdown-list {
+  display: block;
+  
+}
