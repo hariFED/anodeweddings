@@ -11,12 +11,12 @@ const Navbar = () => {
 
                         <li className="relative group">
                             <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">SERVICES</p>
-                            <div className="absolute w-52 left-[-90%]  bg-[#EDEDED] rounded-lg cursor-pointer  hidden group-hover:block group-hover:bg-black group-hover:duration-300  ">
+                            <div className="absolute w-52 left-[-90%]  bg-[#EDEDED]  cursor-pointer  hidden group-hover:block group-hover:bg-black group-hover:duration-300  ">
                                 <ul className="top-0 ">
-                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200">WEDDING</li>
+                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 ">WEDDING</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >FAMILY</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >NEW BORN</li>
-                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 hover:rounded-b-lg" >COUPLE</li>
+                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 " >COUPLE</li>
                                 </ul>
                             </div>
 
@@ -28,13 +28,13 @@ const Navbar = () => {
 
                         <li className="relative duration-100 group">
                             <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">INFO</p>
-                            <div className="absolute  w-52  py-5  left-[-200%] bg-[#EDEDED] rounded-lg cursor-pointer  hidden group-hover:block  group-hover:bg-black group-hover:duration-300 ">
+                            <div className="absolute  w-52 left-[-200%] bg-[#EDEDED]  cursor-pointer  hidden group-hover:block  group-hover:bg-black group-hover:duration-300 ">
                                 <ul className="text-base ">
-                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200">THE PHOTOGRAPHERS
+                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 ">THE PHOTOGRAPHERS
                                     </li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >GOOD WORDS
                                     </li>
-                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >ALBUM</li>
+                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 " >ALBUM</li>
 
                                 </ul>
                             </div>
