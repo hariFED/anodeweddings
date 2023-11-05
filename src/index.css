@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.font {
-  font-family: "Playfair Display", serif;
-  font-size: large;
-}
-
 .dropdown:hover .dropdown-list {
   display: block;
-  
 }
