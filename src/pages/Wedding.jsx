@@ -11,7 +11,7 @@ import Image10 from '../assets/SalamonBharathi/Fourth.jpg';
 import Image11 from '../assets/SalamonBharathi/Seventh.jpg';
 import Image12 from '../assets/SalamonBharathi/Eight.jpg';
 import Image13 from '../assets/SalamonBharathi/Nine.jpg';
-import Image14 from '../assets/SalamonBharathi/Ten.jpg';
+import Image14 from '../assets/SalamonBharathi/ten.jpg';
 import Image16 from '../assets/SalamonBharathi/Twevel.jpg';
 import Image17 from '../assets/SalamonBharathi/Thirtten.jpg';
 
