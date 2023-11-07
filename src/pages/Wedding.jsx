@@ -5,7 +5,18 @@ import Image4 from '../assets/SalamonBharathi/ThirdFive.jpg';
 import Image5 from '../assets/SalamonBharathi/FifthStatic.jpg';
 import Image6 from '../assets/SalamonBharathi/Fifth2.jpg';
 import Image7 from '../assets/SalamonBharathi/Fifth1.jpg';
-import Image8 from '../assets/SalamonBharathi/sixth.jpg';
+import Image8 from '../assets/SalamonBharathi/Fifth.jpg';
+import Image9 from '../assets/SalamonBharathi/Second.jpg';
+import Image10 from '../assets/SalamonBharathi/Fourth.jpg';
+import Image11 from '../assets/SalamonBharathi/Seventh.jpg';
+import Image12 from '../assets/SalamonBharathi/Eight.jpg';
+import Image13 from '../assets/SalamonBharathi/Nine.jpg';
+import Image14 from '../assets/SalamonBharathi/Ten.jpg';
+import Image16 from '../assets/SalamonBharathi/Twevel.jpg';
+import Image17 from '../assets/SalamonBharathi/Thirtten.jpg';
+
+
+
 
 
 
@@ -28,10 +39,10 @@ const Wedding = () => {
                 </div>
             </div>
             <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row">
-                <div className=" md:h-1/2 h-[220px]  md:w-1/2" >
+                <div className=" md:h-1/2 h-max md:w-1/2" >
                     <img src={Image1} alt="photo" />
                 </div>
-                <div className=" md:h-1/2 h-[220px] bg-contain bg-no-repeat md:bg-cover md:w-1/2">
+                <div className="bg-no-repeat bg-contain md:h-1/2 h-max md:bg-cover md:w-1/2">
                     <img src={Image2} alt="photo" />
                 </div>
             </div>
@@ -39,10 +50,10 @@ const Wedding = () => {
 
             </div>
             <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row">
-                <div className=" md:h-1/2 h-[220px]  md:w-1/2" >
+                <div className=" md:h-1/2 h-max md:w-1/2" >
                     <img src={Image3} alt="photo" />
                 </div>
-                <div className=" md:h-1/2 h-[220px] bg-contain bg-no-repeat md:bg-cover md:w-1/2">
+                <div className="bg-no-repeat bg-contain md:h-1/2 h-max md:bg-cover md:w-1/2">
                     <img src={Image4} alt="photo" />
                 </div>
             </div>
@@ -65,14 +76,31 @@ const Wedding = () => {
             </div>
             <div className="bg-[url(./assets/SalamonBharathi/SixthStatic.jpg)] md:bg-cover bg-contain top-0 bg-no-repeat md:bg-center md:h-screen  md:bg-fixed"></div>
             <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row ">
-                <div className="mt-10 md:h-1/2 md:w-1/2" >
-                    <img src={Image6} alt="photo" className='m-10' />
-                    <img src={Image7} alt="photo" className='m-10'/>
+                <div className="md:h-1/2 md:w-1/2" >
+                    <img src={Image8} alt="photo" />
+                    <img src={Image10} alt="photo" />
                 </div>
-                <div className='flex flex-col items-center justify-center w-1/2 h-screen mt-2'>
-                    <div className='flex justify-center w-full'>
-                        <img src={Image8} alt='phto' className='h-screen' />
-                    </div>
+                <div className='md:w-1/2 '>
+                    <img src={Image9} alt='photo' />
+                    <div className='flex items-center justify-center m-4 text-2xl italic md:text-4xl md:h-1/2 md:m-0'><p > &ldquo;Timeless Smiles &ldquo;</p></div>
+                </div>
+            </div>
+            <div className='w-full'>
+                <div className='flex flex-col md:w-1/3 md:flex-row'>
+                    <img src={Image13} alt='photo' />
+                    <img src={Image11} alt='photo' />
+                    <img src={Image12} alt='photo' />
+                </div>
+                <div className='flex flex-col md:flex-row md:w-1/4'>
+                    <img src={Image14} alt='photo' />
+                    <img src={Image16} alt='photo' />
+                    <img src={Image17} alt='photo' />
+                    <img src={Image1} alt='photo' />
+                </div>
+            </div>
+            <div className="bg-[url(./assets/SalamonBharathi/Eleven.jpg)] md:bg-cover bg-contain  bg-no-repeat md:bg-center md:h-screen sm:h-[420px] h-[220px]  md:bg-fixed">
+                <div className='items-center justify-center hidden h-screen md:flex md:w-1/2 '>
+                    <h1 className='text-2xl md:text-4xl md:leading-loose font-satisfy '> Every life is a story. <br/>Thank you for being part of my story.</h1>
                 </div>
             </div>
         </div>
