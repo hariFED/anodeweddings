@@ -1,16 +1,24 @@
-//import Home from "./pages/Home"
+import Home from "./pages/Home"
 import Wedding from "./pages/Wedding"
-import Navbar from "./components/Navbar"
+
+import ServicesWedding from "./pages/ServicesWedding";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 
 function App() {
 
   return (
     <>
-     <Navbar  />
-      {/* <Home /> */}
-      <Wedding />
+      <Router>
+        
+        <Routes>
 
+          <Route path="/" element={<Home />} />
+          <Route path="/services/weddings" element={<ServicesWedding />} />
+
+        </Routes>
+      </Router>
     </>
   )
 }

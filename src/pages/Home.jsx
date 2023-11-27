@@ -1,16 +1,19 @@
-
+import Navbar from "../components/Navbar"
 
 import Carousel from "../components/Carousel"
 
 const Home = () => {
     return (
-        <div>
-           
-            <Carousel />
+        <>
+            <Navbar />
+            <div>
+
+                <Carousel />
 
 
 
-        </div>
+            </div>
+        </>
     )
 }
 

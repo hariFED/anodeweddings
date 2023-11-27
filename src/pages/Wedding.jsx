@@ -11,7 +11,7 @@ import Image10 from '../assets/SalamonBharathi/Fourth.jpg';
 import Image11 from '../assets/SalamonBharathi/Seventh.jpg';
 import Image12 from '../assets/SalamonBharathi/Eight.jpg';
 import Image13 from '../assets/SalamonBharathi/Nine.jpg';
-import Image14 from '../assets/SalamonBharathi/Ten.jpg';
+import Image14 from '../assets/SalamonBharathi/ten.jpg';
 import Image16 from '../assets/SalamonBharathi/Twevel.jpg';
 import Image17 from '../assets/SalamonBharathi/Thirtten.jpg';
 
@@ -100,7 +100,7 @@ const Wedding = () => {
             </div>
             <div className="bg-[url(./assets/SalamonBharathi/Eleven.jpg)] md:bg-cover bg-contain  bg-no-repeat md:bg-center md:h-screen sm:h-[420px] h-[220px]  md:bg-fixed">
                 <div className='items-center justify-center hidden h-screen md:flex md:w-1/2 '>
-                    <h1 className='text-2xl md:text-4xl md:leading-loose font-satisfy '> Every life is a story. <br/>Thank you for being part of my story.</h1>
+                    <h1 className='text-2xl md:text-4xl md:leading-loose font-satisfy '> Every life is a story. <br />Thank you for being part of my story.</h1>
                 </div>
             </div>
         </div>

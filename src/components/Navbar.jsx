@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -13,7 +13,9 @@ const Navbar = () => {
                             <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">SERVICES</p>
                             <div className="absolute w-52 left-[-90%]  bg-[#EDEDED]  cursor-pointer  hidden group-hover:block group-hover:bg-black group-hover:duration-300  ">
                                 <ul className="top-0 ">
-                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 ">WEDDING</li>
+                                    <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 ">
+                                        <Link to='/services/weddings'>WEDDING</Link>
+                                    </li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >FAMILY</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >NEW BORN</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 " >COUPLE</li>
@@ -24,7 +26,8 @@ const Navbar = () => {
 
                         <li className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">BLOG</li>
 
-                        <li className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black ">LOGO</li>
+                        <li className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black ">
+                            <Link to='/'>LOGO</Link></li>
 
                         <li className="relative duration-100 group">
                             <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">INFO</p>
