@@ -14,13 +14,49 @@ import Image13 from '../assets/SalamonBharathi/Nine.jpg';
 import Image14 from '../assets/SalamonBharathi/ten.jpg';
 import Image16 from '../assets/SalamonBharathi/Twevel.jpg';
 import Image17 from '../assets/SalamonBharathi/Thirtten.jpg';
+import Image18 from '../assets/SalamonBharathi/Eleven.jpg'
+import Image19 from '../assets/SalamonBharathi/SecontStatic.jpg'
+import Image20 from '../assets/SalamonBharathi/ThirdStatic.jpg'
+import Image21 from '../assets/SalamonBharathi/SixthStatic.jpg'
+import dummy from '../assets/SalamonBharathi/dummy.png'
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 
-
+const images = [
+    Image1, Image2, Image3, Image4,
+    Image5, Image6, Image7, Image8,
+    Image9, Image10, Image11, Image12,
+    Image13, Image14, Image16, Image17, Image18, Image19, Image20, Image21
+];
+const extraImg = [Image1, Image2, Image3, Image4,
+    Image5, Image6]
 
 
 const Wedding = () => {
+
+    const [showLightbox, setShowLightbox] = useState(false);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+    const openLightbox = (index) => {
+        setSelectedImageIndex(index);
+        setShowLightbox(true);
+    };
+
+    const closeLightbox = () => {
+        setShowLightbox(false);
+    };
+
+    const goToNextImage = () => {
+        setSelectedImageIndex((selectedImageIndex + 1) % images.length);
+    };
+
+    const goToPreviousImage = () => {
+        setSelectedImageIndex((selectedImageIndex + images.length - 1) % images.length);
+    };
 
     return (
         <div className="font-poppins scroll-smooth">
@@ -38,71 +74,97 @@ const Wedding = () => {
                     <p><p className="italic font-extralight">We wanted it to feel like a big family dinner; all cozy and romantic. And to us everyone there was all like family, so it came together perfectly.</p> – Danelle and Dirk</p>
                 </div>
             </div>
-            <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row">
-                <div className=" md:h-1/2 h-max md:w-1/2" >
-                    <img src={Image1} alt="photo" />
-                </div>
-                <div className="bg-no-repeat bg-contain md:h-1/2 h-max md:bg-cover md:w-1/2">
-                    <img src={Image2} alt="photo" />
-                </div>
+
+            <div className="grid grid-cols-1 mt-10 md:grid-cols-3 md:w-1/2 md:mx-auto">
+                {images.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`photo-${index}`}
+                        className="object-cover w-full cursor-pointer h-60"
+                        onClick={() => openLightbox(index)}
+
+                    />
+                ))}
             </div>
-            <div className="bg-[url(./assets/SalamonBharathi/SecontStatic.jpg)] md:bg-cover bg-contain top-0 bg-no-repeat md:bg-center md:h-screen  md:bg-fixed">
+
+            {/* Lightbox */}
+            {showLightbox && (
+                <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-75">
+                    <img
+                        src={images[selectedImageIndex]}
+                        alt={`photo-${selectedImageIndex}`}
+                        className="max-h-full"
+                    />
+
+                    <button
+                        onClick={goToPreviousImage}
+                        className="absolute p-2 bg-transparent text-[#f1f1f1] rounded-full text- md:left-5 left-2"
+                    >
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                    </button>
+                    <button
+                        onClick={goToNextImage}
+                        className="absolute p-2 text-[#f1f1f1] bg-transparent rounded-full md:right-5 right-2"
+                    >
+                        <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
+                    <button
+                        onClick={closeLightbox}
+                        className="absolute w-5 h-5 text-black bg-transparent bg-[#f1f1f1] rounded-full md:h-10 md:w-10 top-5 right-7"
+                    >
+                        <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                </div>
+            )}
+
+            <div className='mt-24 '>
+                <div className='flex items-center justify-center text-4xl italic font-normal'>
+                    Testimonials
+                </div>
+
+                <div className='flex items-center justify-center mt-10 rounded-full'>
+                    <img src={dummy} alt='dummy' className='w-24 h-24 rounded-full' />
+                </div>
+
+                <div className='w-1/3 mx-auto mt-10 text-center font-extralight'>
+                    &ldquo;An Ode Weddings exceeded all our expectations! Their attention to detail, creativity, and professionalism made our wedding day truly unforgettable. Each photograph is a masterpiece, perfectly capturing the love and joy we felt. Thank you for preserving our precious memories in such a beautiful way.&ldquo;
+                </div>
 
             </div>
-            <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row">
-                <div className=" md:h-1/2 h-max md:w-1/2" >
-                    <img src={Image3} alt="photo" />
+
+            <div className='p-5 mt-24 bg-[#f1f1f1]'>
+                <div className='grid grid-rows-1 mx-16 md:grid-cols-6'>
+                    {extraImg.map((image, index) => (
+                        <img src={image} key={index} alt={`photo${index}`} />
+                    ))}
                 </div>
-                <div className="bg-no-repeat bg-contain md:h-1/2 h-max md:bg-cover md:w-1/2">
-                    <img src={Image4} alt="photo" />
-                </div>
-            </div>
-            <div className="bg-[url(./assets/SalamonBharathi/ThirdStatic.jpg)] md:bg-contain bg-contain top-0 bg-no-repeat md:bg-center md:h-screen h-[750px] md:bg-fixed flex justify-center items-center">
-                <div className='hidden w-1/3 text-2xl text-center md:block'> &ldquo; The World is new when your with me &ldquo; <br />
-                    -Salamon</div>
-                <div className='hidden w-1/3 md:block'></div>
-                <div className='hidden w-1/3 text-2xl text-center md:block'>&ldquo; Every time I see the world in your eyes I see myself &ldquo;<br />-Bharathi</div>
-            </div>
-            <div className="h-max " >
-                <img src={Image5} alt="photo" />
-            </div>
-            <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row">
-                <div className=" md:h-1/2 md:w-1/2" >
-                    <img src={Image6} alt="photo" />
-                </div>
-                <div className=" md:h-1/2 h-[220px] bg-contain bg-no-repeat md:bg-cover md:w-1/2">
-                    <img src={Image7} alt="photo" />
-                </div>
-            </div>
-            <div className="bg-[url(./assets/SalamonBharathi/SixthStatic.jpg)] md:bg-cover bg-contain top-0 bg-no-repeat md:bg-center md:h-screen  md:bg-fixed"></div>
-            <div className="flex flex-col flex-wrap w-full md:h-fit h-max md:flex-row ">
-                <div className="md:h-1/2 md:w-1/2" >
-                    <img src={Image8} alt="photo" />
-                    <img src={Image10} alt="photo" />
-                </div>
-                <div className='md:w-1/2 '>
-                    <img src={Image9} alt='photo' />
-                    <div className='flex items-center justify-center m-4 text-2xl italic md:text-4xl md:h-1/2 md:m-0'><p > &ldquo;Timeless Smiles &ldquo;</p></div>
+                <div className='flex justify-between mt-24 '>
+
+                    <div className='flex flex-col gap-2 text-sm font-extralight'>
+                        <a href='#' className='underline underline-offset-4'> Terms and conditions</a>
+                        <a href='#' className='underline underline-offset-4'>Privacy Policies</a>
+                    </div>
+
+                    <div className='flex flex-col gap-2 cursor-pointer '>
+                        <div className='text-sm underline font-extralight underline-offset-2'>
+                            Contact Us
+                        </div>
+                        <div className='flex items-center justify-center gap-4'>
+                            <a><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a><FontAwesomeIcon icon={faWhatsapp} /></a>
+                        </div>
+                    </div>
+                    <div className='italic cursor-pointer font-extralight '>
+                        @anodeweddings
+                    </div>
                 </div>
             </div>
-            <div className='w-full'>
-                <div className='flex flex-col md:w-1/3 md:flex-row'>
-                    <img src={Image13} alt='photo' />
-                    <img src={Image11} alt='photo' />
-                    <img src={Image12} alt='photo' />
-                </div>
-                <div className='flex flex-col md:flex-row md:w-1/4'>
-                    <img src={Image14} alt='photo' />
-                    <img src={Image16} alt='photo' />
-                    <img src={Image17} alt='photo' />
-                    <img src={Image1} alt='photo' />
-                </div>
-            </div>
-            <div className="bg-[url(./assets/SalamonBharathi/Eleven.jpg)] md:bg-cover bg-contain  bg-no-repeat md:bg-center md:h-screen sm:h-[420px] h-[220px]  md:bg-fixed">
-                <div className='items-center justify-center hidden h-screen md:flex md:w-1/2 '>
-                    <h1 className='text-2xl md:text-4xl md:leading-loose font-satisfy '> Every life is a story. <br />Thank you for being part of my story.</h1>
-                </div>
-            </div>
+
+
+
+
+
         </div>
 
     )

@@ -3,6 +3,8 @@ import Wedding from "./pages/Wedding"
 
 import ServicesWedding from "./pages/ServicesWedding";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ReactDOM from 'react-dom'
+
 
 
 
