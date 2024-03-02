@@ -78,6 +78,7 @@ const Wedding = () => {
             <div className="grid grid-cols-1 mt-10 md:grid-cols-3 md:w-1/2 md:mx-auto">
                 {images.map((image, index) => (
                     <img
+                        loading='lazy'
                         key={index}
                         src={image}
                         alt={`photo-${index}`}
