@@ -1,37 +1,31 @@
-import Image11 from '../assets/SalamonBharathi/Eleven.jpg'
-import Image12 from '../assets/SalamonBharathi/Fifth2.jpg'
-
+import { Link } from 'react-router-dom'
+import KathirShaliniCover from '../assets/KathirShalini/KathirShalini45.jpg'
+import SalamonCover from '../assets/SalamonBharathi/FirstStatic.jpg'
 const ServicesWedding = () => {
     return (
         <>
 
-            <div className='h-screen'>
+            <div className=''>
                 <div className='flex flex-col items-center justify-center md:flex-row'>
                     <div className='flex items-center justify-center h-[35rem]'>
-                       <p className='text-6xl font-extrabold tracking-wider font-poppins'> WEDDING</p>
+                        <p className='text-6xl font-extrabold tracking-wider font-poppins'> WEDDING</p>
                     </div>
 
 
 
 
                 </div>
-                <div className='flex flex-col items-center justify-center md:flex-row'>
-                    <div className='md:w-1/2 '>
-                        <p>Hoodjfkjoeijfoe</p>
-                    </div>
-                    <div className='md:w-1/2'>
-                        <img src={Image12} alt="photo" />
-                    </div>
 
-
-
-                </div>
-                <div className='flex flex-col items-center justify-center md:flex-row'>
-                    <div className=''>
-                        <img src={Image11} alt='photo' />
+                <div className='grid items-center gap-5 mx-auto md:grid-cols-2 md:w-1/2 md:flex-row'>
+                    <div className='cursor-pointer '>
+                        <Link to='/services/weddings/salamonandbharathi'>
+                            <img src={SalamonCover} alt='Cover-photo' />
+                        </Link>
                     </div>
                     <div className=''>
-                        <img src={Image12} alt="photo" />
+                        <Link to='/services/weddings/kathirshalini'>
+                            <img src={KathirShaliniCover} alt="Cover-photo" />
+                        </Link>
                     </div>
 
 
