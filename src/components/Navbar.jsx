@@ -10,17 +10,18 @@ const Navbar = () => {
                     <ul className="flex flex-wrap justify-between py-5">
 
                         <li className="relative group">
-                            <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">SERVICES</p>
-                            <div className="absolute w-52 left-[-90%]  bg-[#EDEDED]  cursor-pointer  hidden group-hover:block group-hover:bg-black group-hover:duration-300  ">
-                                <ul className="top-0 ">
+                            <Link to='/services/weddings'>  <p className="py-2 mb-2 duration-100 ease-in border-black cursor-pointer hover:border-b-2 hover:text-black">PORTFOLIO</p> </Link>
+                            {/* <div className="absolute w-52 left-[-90%]  bg-[#EDEDED]  cursor-pointer  hidden group-hover:block group-hover:bg-black group-hover:duration-300  ">
+                                {/* <ul className="top-0 ">
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 ">
                                         <Link to='/services/weddings'>WEDDING</Link>
                                     </li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >FAMILY</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200" >NEW BORN</li>
                                     <li className="block py-3 text-center border-b-[1.5px] border-transparent hover:border-gray-400 hover:bg-white duration-200 " >COUPLE</li>
-                                </ul>
-                            </div>
+                                </ul> 
+                            </div> */}
+
 
                         </li>
 
