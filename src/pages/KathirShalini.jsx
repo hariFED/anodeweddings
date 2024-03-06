@@ -250,11 +250,11 @@ const KathirShaliniAlbum = () => {
 
                 {/* Lightbox */}
                 {showLightbox && (
-                    <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-75">
+                    <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black ">
                         <img
                             src={images[selectedImageIndex]}
                             alt={`photo-${selectedImageIndex}`}
-                            className="max-h-full"
+                            className="h-[80vh]"
                         />
 
                         <button
@@ -271,7 +271,7 @@ const KathirShaliniAlbum = () => {
                         </button>
                         <button
                             onClick={closeLightbox}
-                            className="absolute w-5 h-5 text-black bg-transparent bg-[#f1f1f1] rounded-full md:h-10 md:w-10 top-5 right-7"
+                            className="absolute w-5 h-5 text-white bg-transparent bg-[#f1f1f1] rounded-full md:h-10 md:w-10 top-5 right-7"
                         >
                             <FontAwesomeIcon icon={faTimes} />
                         </button>
