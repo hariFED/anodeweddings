@@ -16,18 +16,23 @@ const ServicesWedding = () => {
 
                 </div>
 
-                <div className='grid items-center gap-5 mx-auto md:grid-cols-2 md:w-1/2 md:flex-row'>
-                    <div className='cursor-pointer '>
-                        <Link to='/services/weddings/salamonandbharathi'>
-                            <img src={SalamonCover} alt='Cover-photo' />
-                        </Link>
-                    </div>
-                    <div className=''>
-                        <Link to='/services/weddings/kathirshalini'>
-                            <img src={KathirShaliniCover} alt="Cover-photo" />
-                        </Link>
-                    </div>
+                <div className='grid items-center gap-5 mx-auto md:grid-cols-2 md:w-1/2 md:flex-row '>
+                    <Link to='/services/weddings/salamonandbharathi'>
+                        <div className='relative flex items-center justify-center cursor-pointer  bg-[url(./assets/SalamonBharathi/FirstStatic.jpg)] h-72 bg-cover '>
 
+
+                            <p className='  text-3xl font-extrabold text-center text-[#f1f1f1] '>SALAMON
+                                <br />&
+                                <br /> BHARATHI</p>
+
+
+                        </div> </Link>
+                    <Link to='/services/weddings/kathirshalini'>
+                        <div className='relative cursor-pointer bg-[url(./assets/KathirShalini/KathirShalini23.jpg)] h-72 bg-cover'>
+
+
+                        </div>
+                    </Link>
 
 
                 </div>

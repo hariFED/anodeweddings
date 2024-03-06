@@ -232,7 +232,7 @@ const KathirShaliniAlbum = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 mt-10 md:grid-cols-3 md:w-1/2 md:mx-auto">
+                <div className="grid grid-cols-1 gap-2 mt-10 md:grid-cols-3 md:w-1/2 md:mx-auto">
                     {images.map((image, index) => (
 
                         <img
@@ -240,7 +240,7 @@ const KathirShaliniAlbum = () => {
                             key={index}
                             src={image}
                             alt={`photo-${index}`}
-                            className="object-cover w-full cursor-pointer md:h-64 hover:blur-sm"
+                            className="object-cover w-full transition duration-100 ease-in-out cursor-pointer md:h-64 hover:filter hover:brightness-50 hover:opacity-75 hover:scale-105"
                             onClick={() => openLightbox(index)}
 
                         />
