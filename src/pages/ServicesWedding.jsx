@@ -5,20 +5,19 @@ const ServicesWedding = () => {
     return (
         <>
 
-            <div className=''>
-                <div className='flex flex-col items-center justify-center md:flex-row'>
-                    <div className='flex items-center justify-center h-[35rem]'>
-                        <p className='text-6xl font-extrabold tracking-wider font-poppins'> WEDDING</p>
+            <div className='flex items-end gap-10 p-8 '>
+                <div className='fixed flex flex-col items-center justify-center h-full -rotate-90 md:flex-row '>
+                    <div className='flex flex-col items-center justify-center '>
+                        <p className='font-extrabold tracking-widest text-7xl font-poppins'>
+                            WEDDING</p>
+                        <p className=''> For more works click on the fa-instagram</p>
                     </div>
-
-
-
 
                 </div>
 
-                <div className='grid items-center gap-5 mx-auto md:grid-cols-2 md:w-1/2 md:flex-row '>
+                <div className='grid items-end h-screen gap-5 pt-2 md:ml-auto md:grid-cols-2 md:w-[70%] md:flex-row '>
                     <Link to='/services/weddings/salamonandbharathi'>
-                        <div className='relative flex items-center justify-center cursor-pointer  bg-[url(./assets/SalamonBharathi/FirstStatic.jpg)] h-72 bg-cover '>
+                        <div className='relative flex items-center justify-center cursor-pointer  bg-[url(./assets/SalamonBharathi/FirstStatic.jpg)] h-[30rem] bg-cover '>
 
 
                             <p className='  text-3xl font-extrabold text-center text-[#f1f1f1] '>SALAMON
@@ -28,11 +27,20 @@ const ServicesWedding = () => {
 
                         </div> </Link>
                     <Link to='/services/weddings/kathirshalini'>
-                        <div className='relative cursor-pointer bg-[url(./assets/KathirShalini/KathirShalini23.jpg)] h-72 bg-cover'>
+                        <div className='relative cursor-pointer bg-[url(./assets/KathirShalini/KathirShalini23.jpg)] h-[30rem] bg-cover'>
 
 
                         </div>
                     </Link>
+                    <Link to='/services/weddings/alifya'>
+                        <div className='relative cursor-pointer bg-[url(./assets/Alfiya/Alfiya56.jpg)] h-[30rem] bg-cover'>
+
+
+                        </div>
+                    </Link>
+
+                    {/*  */}
+
 
 
                 </div>
