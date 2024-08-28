@@ -92,6 +92,9 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import Logo from "../assets/logo1.png"
+import { Link } from "react-router-dom"
+import { FaHome } from "react-icons/fa"
 
 
 
@@ -217,9 +220,16 @@ const KathirShaliniAlbum = () => {
         <>
 
             <div className="font-poppins scroll-smooth">
-                <div className='bg-[url(./assets/KathirShalini/KathirShalini23.jpg)] bg-center  h-screen bg-cover flex justify-center items-center '>
+                <div className='relative bg-[url(./assets/KathirShalini/KathirShalini23.jpg)] bg-center  h-screen bg-cover flex justify-center items-center '>
 
                     <h1 className=" font-bold font-poppins tracking-wider text-white md:text-[3em] text-[1.5em] cursor-none"> KATHIR & SHALINI </h1>
+                    <div className="absolute z-50 left-5 top-2 md:fixed md:top-10 md:left-20">
+                        <img src={Logo} alt="Logo" />
+                    </div>
+                    <div className='fixed z-50 p-2 text-4xl bg-white md:top-20 md:right-32 top-10 right-10'>
+
+                        <Link to="/"><FaHome /> </Link>
+                    </div>
 
                 </div>
                 <div className="flex flex-col items-center justify-center gap-5 my-20 mx-14">
